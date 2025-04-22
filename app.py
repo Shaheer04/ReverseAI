@@ -130,7 +130,7 @@ def main():
         text_input = st.text_area(
             "Paste the unhinged LinkedIn post",
             height=200,
-            placeholder="Paste that wild LinkedIn post here... you know, the one with too many emojis and life lessons learned while waiting for coffee..."
+            placeholder="Paste that wild LinkedIn post here..."
         )
     
     with col2:
