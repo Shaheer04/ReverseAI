@@ -106,7 +106,7 @@ def main():
             text-align: center;
             color: #666;
             padding: 20px;
-            margin-top: 40px;
+            margin-top: 20px;
         }
         </style>
     """, unsafe_allow_html=True)
@@ -161,6 +161,10 @@ def main():
         else:
             st.error("Please paste a LinkedIn post to analyze its unhinged energy!")
 
+    st.markdown(
+    f'<p style="color: gray; font-size: 0.8em;"> Made with ❤️ by <a href="https://github.com/Shaheer04" target="_blank">Shaheer Jamal</a></p>',
+    unsafe_allow_html=True,
+    )
     # Footer with updated text
     st.markdown("<div class='footer'>ReverseAI | Decoding LinkedIn's Most Unhinged Content Since ChatGPT </div>", unsafe_allow_html=True)
 
