@@ -41,13 +41,13 @@ def generate_prompt(text, content_type="LinkedIn Post"):
         2. Identify patterns typical of viral or attention-seeking LinkedIn content
         3. Reconstruct the likely prompt that would generate this type of content
         4. Add humor to your analysis when appropriate
-        5. Make response short other than the original prompt
+        5. Make response short other than the prompt
         
         Format your response as:
-        📝 THE ORIGINAL PROMPT:
+        📝 PROMPT:
         [Write the vague prompt that would generate this type of unhinged LinkedIn post]
         
-        💡 UNHINGED SCORE: [1-10, where 1 is lowest and 10 is maximum LinkedIn cringe]
+        💡 UNHINGED SCORE: [includes only numbers 1-10, where 1 is lowest and 10 is maximum LinkedIn cringe]
         """
         
         response = model.generate_content(prompt)
