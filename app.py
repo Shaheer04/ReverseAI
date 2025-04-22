@@ -90,6 +90,7 @@ def main():
             padding: 20px;
             border-radius: 10px;
             margin-top: 20px;
+            margin-bottom: 20px;
             border-left: 5px solid #4158D0;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
         }
@@ -156,9 +157,7 @@ def main():
             # Share on social button
             col1, col2 = st.columns(2)
             with col1:
-                st.button("📋 Copy to Clipboard", key="copy_result")
-            with col2:
-                st.markdown("<div class='cta-button'>Share This Analysis</div>", unsafe_allow_html=True)
+                st.button("Clear Result", key="copy_result")
         else:
             st.error("Please paste a LinkedIn post to analyze its unhinged energy!")
 
